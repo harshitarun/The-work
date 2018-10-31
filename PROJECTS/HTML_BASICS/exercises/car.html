@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+                <meta charset="UTF-8">
+                <title>Car Anim</title>
+                <script src="car.js"></script>
+    <style>
+        body{
+            background-color: aqua;
+        }
+        #ola{
+            width:200px;
+            height:50px;
+            position: absolute; 
+            left:200px;
+            top:90px;
+            animation:5s infinite linear slidein2;
+        }
+        #car{
+            position: absolute;
+             width:50%;
+             height:40%;
+             animation:5s infinite linear slidein1;
+        }  
+        @keyframes slidein1 {
+            from{
+            left:0px;
+            }
+            to{
+                left:1000px;
+            }
+        } 
+        @keyframes slidein2 {
+            from{
+            left:200px;
+            }
+            to{
+                left:1200px;
+            }
+        } 
+        .tyre{
+            position:absolute;
+            top:20%;
+            width:10%;
+            animation:5s infinite linear slidein;
+        }
+        @keyframes slidein{
+            from{
+            transform:rotate(0deg);
+            left:0px;
+            }
+            to{
+            transform:rotate(360deg);
+            left:1000px;
+            }
+        }
+        .tyre1{
+            margin-left : 5%;
+        }
+        .tyre2{
+            margin-left:39%;
+        }
+        #street{
+            height: 50px;
+            width:100%;
+            background-color: black;
+            position: absolute;
+            top:220px;
+            left:0;
+        }
+        #cloud{
+            position: absolute;
+        }
+    
+    
+    </style>            
+</head>
+<body onload="Load();">
+                <img src="https://image.ibb.co/hqGnkk/cloud.png" alt="cloud" id="cloud">
+                <div class="mycar">
+                <img src="https://preview.ibb.co/dy1bd5/car.png" alt="car" id="car">
+                <img src="ola.png" alt="ola" id="ola">
+                <img src="https://image.ibb.co/cBwWBQ/tyre.png" alt="tyre" class="tyre tyre1">
+                <img src="https://image.ibb.co/cBwWBQ/tyre.png" alt="tyre" class="tyre tyre2">
+                </div>
+                <div id="street"></div>
+</body>
+</html>
+

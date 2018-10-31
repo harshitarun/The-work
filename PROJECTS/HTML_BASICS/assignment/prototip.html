@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Prottype.html</title>
+</head>
+<body id="body">
+    <button onclick="post1()">Click to add images</button>
+    <script>
+        function post(){
+            var j="<div><h1>Image POST</h1></div>"
+             var di=document.getElementById('body');
+               di.insertAdjacentHTML('beforeend',j);
+               
+        }   
+        post.prototype.img=function(){
+            var k="<div><img src='ola.png'></div>"
+            var di=document.getElementById('body');
+               di.insertAdjacentHTML('beforeend',k);
+        }
+        post.prototype.but=function(){
+            var like="liked";
+            var comment;
+            var l="<div><button onclick='like("+like+")'>like</button></div>"
+            var di=document.getElementById('body');
+               di.insertAdjacentHTML('beforeend',l);
+        }
+        function post1(){
+        var a=new post();
+                a.img();
+                a.but();}
+        // function like(a)
+        // {
+        //     console.log(a);
+        //     if(a==like)
+        //         alert("image liked");
+                   
+        // }
+
+        
+        
+    </script>
+    
+</body>
+</html>

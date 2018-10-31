@@ -1,0 +1,106 @@
+        .pagination{
+            margin-left: 45%; 
+            color:black;
+            border:none; 
+        }
+        .pagination *{
+            color:black;
+            border:none;
+        }
+        .pagination *:hover{
+            background-color: black;
+            color:white;
+        }
+        /* .pagination {
+            display: inline-block;
+            /* float: center; */
+            
+        /* } */
+        
+        /* .pagination>a {
+            color: black;
+            float: center;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+        
+        .pagination a.active {
+            background-color: black;
+            color: white; 
+        } */
+        .big{
+            padding:2px;
+            padding-left: 7px;
+            padding-right: 7px;
+            background-color: black;
+            color:white;
+        }    
+        .small{
+            padding:1px;
+            padding-left: 4px;
+            padding-right: 4px;
+            background-color: grey;
+            color:white;
+        } 
+        .image img{
+            width:50px;
+            float:left;
+        } 
+        .image label{
+            padding-left:20px;
+            margin-bottom:2px;
+        }
+        .image:hover{
+            background-color: rgb(146, 146, 146);
+            
+        }
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color:white;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+        
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+            
+        }
+        
+        .sidenav a:hover {
+            background-color: #f1f1f1;
+            text-decoration: none;
+        }
+        
+        
+        @media screen and (max-height: 450px) {
+          .sidenav {padding-top: 15px;}
+          .sidenav a {font-size: 18px;}
+        }
+        .nav{
+            padding-top:20px;
+            margin-left: 20px;
+            position:fixed;
+            background-color:white;
+            z-index: 1;
+            width:100%;
+            
+        }
+        .nav a{
+            text-decoration: none;
+            color: black;
+            font-size: 25px;
+            margin-top:-5px;
+            padding-left: 320px;
+        }
+     

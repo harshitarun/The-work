@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>button</title>
+</head>
+<body>
+    <!-- <button class="lg-blue-white">HI</button>
+    <button class="md-purple">HI</button>
+    <button class="sm-blue">HI</button>
+    <button class="lg-magenta">HI</button>
+    <button class="lg-maroon">HI</button>
+    <button class="lg-magenta">HI</button> -->
+    <button class="sm-silver">HI</button>
+    <button class="md-#7FFF00">HI</button>
+    <button class="lg-cornflowerblue">HI</button>
+    <button class="lg-maroon">HI</button>
+    <button class="lg-black">HI</button>
+    <harshit type="button"></harshit>
+    
+    <script>
+        var a=document.getElementsByTagName("harshit");
+        for(i=0;i<a.length;i++)
+        {
+            b=[];
+            var d=a[i].className;
+            b=d.split('-');
+            if(b[0]=="lg")
+            {
+                console.log(b[1]);
+                a[i].style.width="100%";
+                a[i].style.height="50px";
+                a[i].style.borderRadius="25px";
+                a[i].style.backgroundColor=b[1];
+                a[i].style.color=b[2];
+            }
+            if(b[0]=="md")
+            {
+                console.log(b[1]);
+                a[i].style.width="50%";
+                a[i].style.height="50px";
+                a[i].style.borderRadius="25px";
+                a[i].style.backgroundColor=b[1];
+            }
+            if(b[0]=="sm")
+            {
+                console.log(b[1]);
+                a[i].style.width="10%";
+                a[i].style.height="50px";
+                a[i].style.borderRadius="25px";
+                a[i].style.backgroundColor=b[1];
+            }
+        }    
+    </script>
+</body>
+</html>
